@@ -9,7 +9,6 @@
 import Foundation
 
 struct JSONDictionary: Decodable {
-    
     let data: DataDictionary
     
     struct DataDictionary: Decodable {
@@ -17,7 +16,6 @@ struct JSONDictionary: Decodable {
         let children: [PostDictionary]
         
         struct PostDictionary: Decodable {
-            
             let post: Post
             
             private enum CodingKeys: String, CodingKey {
